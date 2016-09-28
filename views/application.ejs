@@ -51,7 +51,7 @@
     <div class="container marketing">
         <div class="row">
             <div class="col-md-9">
-                <form class="form-horizontal">
+                <form class="form-horizontal" id="application-form">
                     <div class="form-group">
                         <label class="col-sm-3 control-label">Тип издания</label>
                         <div class="col-sm-9">
@@ -159,7 +159,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-3 col-sm-9">
-                            <button type="submit" class="btn btn-primary">Отправить</button>
+                            <button type="submit" class="btn btn-primary" id="submit">Отправить</button>
                         </div>
                     </div>
                 </form>
@@ -179,6 +179,19 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+    $('#submit').on('click', function() {
+        var form = $('#application-form').serializeArray();
+
+        var application = {};
+
+        for (var i = 0; i < form.length; ++i) {
+            application[form[i].name] = form[i].value;
+        }
+
+        console.log(application);
+    });
+    </script>
 </body>
 
 </html>
