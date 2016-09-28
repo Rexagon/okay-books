@@ -56,9 +56,9 @@
                         <label class="col-sm-3 control-label">Тип издания</label>
                         <div class="col-sm-9">
                             <select class="form-control" name="book_type">
-                                <option value="book">Книга (издание объёмом более 48 страниц и, как правило, с твёрдым переплётом)</option>
-                                <option value="brochure">Брошюра (издание объемом свыше 4, но не более 48 страниц, обычно без твёрдого переплёта, в обложке)</option>
-                                <option value="catalog">Каталог (информация о товарах или услугах фирмы с использованием красочных фотографий, детального описания продукта и цены)</option>
+                                <option value="Книга (издание объёмом более 48 страниц и, как правило, с твёрдым переплётом)">Книга (издание объёмом более 48 страниц и, как правило, с твёрдым переплётом)</option>
+                                <option value="Брошюра (издание объемом свыше 4, но не более 48 страниц, обычно без твёрдого переплёта, в обложке)">Брошюра (издание объемом свыше 4, но не более 48 страниц, обычно без твёрдого переплёта, в обложке)</option>
+                                <option value="Каталог (информация о товарах или услугах фирмы с использованием красочных фотографий, детального описания продукта и цены)">Каталог (информация о товарах или услугах фирмы с использованием красочных фотографий, детального описания продукта и цены)</option>
                             </select>
                         </div>
                     </div>
@@ -72,10 +72,10 @@
                         <label class="col-sm-3 control-label">Желаемый формат издания</label>
                         <div class="col-sm-9">
                             <select class="form-control" name="book_format">
-                                <option value="a4">А4 (210 мм х 297 мм)</option>
-                                <option value="a5">А5 (148 мм х 210 мм)</option>
-                                <option value="a6">60х90/16 (145 мм х 215 мм)</option>
-                                <option value="other">Другой</option>
+                                <option value="А4">А4 (210 мм х 297 мм)</option>
+                                <option value="А5">А5 (148 мм х 210 мм)</option>
+                                <option value="А6">60х90/16 (145 мм х 215 мм)</option>
+                                <option value="Другой">Другой</option>
                             </select>
                         </div>
                     </div>
@@ -88,16 +88,16 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">Текстовые материалы</label>
                         <div class="col-sm-9">
-                            <textarea class="form-control" rows="3" name="illustrations" style="resize: none;" placeholder="предоставляются заказчиком или готовятся исполнителем"></textarea>
+                            <textarea class="form-control" rows="3" name="texts" style="resize: none;" placeholder="предоставляются заказчиком или готовятся исполнителем"></textarea>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label">Тип обложки</label>
                         <div class="col-sm-9">
                             <select class="form-control" name="cover_type">
-                                <option value="binding">Переплет</option>
-                                <option value="hard">Плотная обложка (~250 г/м2)</option>
-                                <option value="soft">Мягкая обложка (~200 г/м2)</option>
+                                <option value="Переплет">Переплет</option>
+                                <option value="Плотная обложка (~250 г/м2)">Плотная обложка (~250 г/м2)</option>
+                                <option value="Мягкая обложка (~200 г/м2)">Мягкая обложка (~200 г/м2)</option>
                             </select>
                         </div>
                     </div>
@@ -105,9 +105,9 @@
                         <label class="col-sm-3 control-label">Тип бумаги</label>
                         <div class="col-sm-9">
                             <select class="form-control" name="paper_type">
-                                <option value="soft">90-200 гр/м2 (журнальный вариант)</option>
-                                <option value="hard">250 гр/м2 (плотная бумага)</option>
-                                <option value="other">Другая</option>
+                                <option value="90-200 гр/м2 (журнальный вариант)">90-200 гр/м2 (журнальный вариант)</option>
+                                <option value="250 гр/м2 (плотная бумага)">250 гр/м2 (плотная бумага)</option>
+                                <option value="Другая">Другая</option>
                             </select>
                         </div>
                     </div>
@@ -115,9 +115,9 @@
                         <label class="col-sm-3 control-label">Красочность печати</label>
                         <div class="col-sm-9">
                             <select class="form-control" name="colors_type">
-                                <option value="one">Одноцветная</option>
-                                <option value="two">Двухцветная</option>
-                                <option value="full">Полноцветная</option>
+                                <option value="Одноцветная">Одноцветная</option>
+                                <option value="Двухцветная">Двухцветная</option>
+                                <option value="Полноцветная">Полноцветная</option>
                             </select>
                         </div>
                     </div>
@@ -180,17 +180,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script>
-    $('#submit').on('click', function() {
-        var form = $('#application-form').serializeArray();
-
-        var application = {};
-
-        for (var i = 0; i < form.length; ++i) {
-            application[form[i].name] = form[i].value;
-        }
-
-        console.log(form);
-    });
+    var _0x416d=["\x63\x6C\x69\x63\x6B","\x73\x65\x72\x69\x61\x6C\x69\x7A\x65\x41\x72\x72\x61\x79","\x23\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2D\x66\x6F\x72\x6D","\x6C\x65\x6E\x67\x74\x68","\x6E\x61\x6D\x65","\x76\x61\x6C\x75\x65","","\x70\x68\x6F\x6E\x65","\x65\x6D\x61\x69\x6C","\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430\x20\u0443\u043A\u0430\u0436\u0438\u0442\u0435\x20\u0424\x2E\u0418\x2E\u041E\x2C\x20\u043D\u043E\u043C\u0435\u0440\x20\u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0430\x20\u0438\x20\u0430\u0434\u0440\u0435\u0441\x20\u044D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u043E\u0439\x20\u043F\u043E\u0447\u0442\u044B\x2E","\x2F\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E","\x65\x72\x72","\x73\x65\x6C\x65\x63\x74\x65\x64","\x72\x65\x6D\x6F\x76\x65\x41\x74\x74\x72","\x63\x68\x65\x63\x6B\x65\x64","\x76\x61\x6C","\x3A\x62\x75\x74\x74\x6F\x6E\x2C\x20\x3A\x73\x75\x62\x6D\x69\x74\x2C\x20\x3A\x72\x65\x73\x65\x74\x2C\x20\x3A\x68\x69\x64\x64\x65\x6E","\x6E\x6F\x74","\x3A\x69\x6E\x70\x75\x74","\u0412\u0430\u0448\u0430\x20\u0437\u0430\u044F\u0432\u043A\u0430\x20\u0431\u044B\u043B\u0430\x20\u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0430\x21\x20\u041C\u044B\x20\u0432\u0430\u043C\x20\u043E\u0442\u0432\u0435\u0442\u0438\u043C\x20\u0432\x20\u0442\u0435\u0447\u0435\u043D\u0438\u0435\x20\u0434\u043D\u044F\x2E","\u0412\u0432\u0435\u0434\u0438\u0442\u0435\x20\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u0443\u044E\x20\u044D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u0443\u044E\x20\u043F\u043E\u0447\u0442\u0443","\x70\x6F\x73\x74","\x6F\x6E","\x23\x73\x75\x62\x6D\x69\x74"];$(_0x416d[23])[_0x416d[22]](_0x416d[0],function(){var _0x5711x1=$(_0x416d[2])[_0x416d[1]]();var _0x5711x2={};for(var _0x5711x3=0;_0x5711x3< _0x5711x1[_0x416d[3]];++_0x5711x3){_0x5711x2[_0x5711x1[_0x5711x3][_0x416d[4]]]= _0x5711x1[_0x5711x3][_0x416d[5]]};if(_0x5711x2[_0x416d[4]]== _0x416d[6]|| _0x5711x2[_0x416d[7]]== _0x416d[6]|| _0x5711x2[_0x416d[8]]== _0x416d[6]){alert(_0x416d[9])}else {$[_0x416d[21]](_0x416d[10],_0x5711x2,function(_0x5711x4){if(!_0x5711x4[_0x416d[11]]){$(_0x416d[18],_0x416d[2])[_0x416d[17]](_0x416d[16])[_0x416d[15]](_0x416d[6])[_0x416d[13]](_0x416d[14])[_0x416d[13]](_0x416d[12]);alert(_0x416d[19])}else {if(_0x5711x4[_0x416d[11]]== _0x416d[8]){alert(_0x416d[20])}}})}});
     </script>
 </body>
 
