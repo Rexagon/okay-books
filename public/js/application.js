@@ -29,8 +29,8 @@ $('#submit').on('click', function() {
     for (var i = 0; i < form.length; ++i) {
         application[form[i].name] = form[i].value;
     }
-    if (application.name == '' || application.phone == '' || application.email == '') {
-        alert('Пожалуйста укажите Ф.И.О, номер телефона и адрес электронной почты.');
+    if (application.phone == '') {
+        alert('Пожалуйста укажите ваш номер телефона.');
     } else {
         $.post('/call_application', application, function(res) {
             if (!res.err) {
