@@ -14,10 +14,11 @@ app.use(body_parser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Define routes
-app.use('/', require('./routes/index.js'));
+app.use('/', require('./routes/main.js'));
 app.use('/', require('./routes/about.js'));
 app.use('/', require('./routes/contacts.js'));
-app.use('/', require('./routes/application.js'));
+app.use('/', require('./routes/book_application.js'));
+app.use('/', require('./routes/call_application.js'));
 
 app.use(function(req, res, next) {
 	res.status(404).render('error_pages/404');

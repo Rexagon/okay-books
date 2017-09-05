@@ -1,104 +1,46 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Подготовка и печать подарочных изданий.  Создание художественной концепции проекта, рубрикатора, эскизов оформления, подготовка текстовых, иллюстративных материалов, обработка архивных материалов, редактура, корректура, верстка, издательский пакет, оригинал-макет.">
-    <meta name="author" content="Ivan Kalinin">
-    <link rel="icon" href="img/favicon.ico">
-    <title>Юбилейные книги | Позвоните мне</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle menu</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/"><img src="img/logo.png" alt="" width="95" height="50"></a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/">Главная</a></li>
-                    <li><a href="/application">Отправить заявку</a></li>
-                    <li class="active"><a href="">Позвоните мне</a></li>
-                    <li><a href="/about">Наши услуги</a></li>
-                    <li><a href="/contacts">Контакты</a></li>
-                </ul>
-                <p class="navbar-text navbar-right" style="color: white;">+7 (800) 301-24-14</p>
-            </div>
-        </div>
-    </nav>
-    <div class="carousel slide" id="application-slider">
-        <div class="carousel-inner">
-            <div class="item active">
-                <img class="first-slide" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAADCAYAAABfwxXFAAAAYklEQVQYVwFXAKj/AZWJhf/78wMA39D0AAYlEQDrBOsAFwYRAAAXGgABoaCH/+7k+QDex/YA3/jqAPYJ9wBHOz8A9gAFAAHOzrn/3dbhANbB5QD9H/8AytXaABYQFAD0+QMAoMkncTB5GTgAAAAASUVORK5CYII=" alt="First slide">
-            </div>
+<div class="carousel slide" id="application-slider">
+    <div class="carousel-inner">
+        <div class="item active">
+            <img class="first-slide" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAADCAYAAABfwxXFAAAAYklEQVQYVwFXAKj/AZWJhf/78wMA39D0AAYlEQDrBOsAFwYRAAAXGgABoaCH/+7k+QDex/YA3/jqAPYJ9wBHOz8A9gAFAAHOzrn/3dbhANbB5QD9H/8AytXaABYQFAD0+QMAoMkncTB5GTgAAAAASUVORK5CYII=" alt="First slide">
         </div>
     </div>
-    <div class="container marketing">
-        <div class="row">
-            <div class="col-md-9">
-                <form role="form" class="form-horizontal" id="application-form">
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Ваше имя</label>
-                        <div class="col-sm-6">
-                            <input type="text" class="form-control" name="name">
-                        </div>
+</div>
+<div class="container marketing">
+    <div class="row">
+        <div class="col-md-9">
+            <form role="form" class="form-horizontal" id="application-form">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Ваше имя</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" name="name">
                     </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Контактный E-mail</label>
-                        <div class="col-sm-6">
-                            <input type="email" class="form-control" name="email">
-                        </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Контактный E-mail</label>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" name="email">
                     </div>
-                    <div class="form-group has-warning">
-                        <label class="col-sm-3 control-label">Контактный телефон <spam style="color:red">*</spam></label>
-                        <div class="col-sm-6">
-                            <input type="tel" class="form-control" name="phone">
-                        </div>
+                </div>
+                <div class="form-group has-warning">
+                    <label class="col-sm-3 control-label">Контактный телефон
+                        <spam style="color:red">*</spam>
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="tel" class="form-control" name="phone">
                     </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Текст сообщения</label>
-                        <div class="col-sm-9">
-                            <textarea class="form-control" rows="3" name="message" style="resize: none;"></textarea>
-                        </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Текст сообщения</label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" rows="3" name="message" style="resize: none;"></textarea>
                     </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-3 col-sm-9">
-                            <button type="button" class="btn btn-primary" id="submit">Отправить</button>
-                        </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+                        <button type="button" class="btn btn-primary" id="submit">Отправить</button>
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
-        <hr class="featurette-divider">
-        <footer>
-            <p class="pull-right"><a href="#"><b>Наверх</b></a></p>
-            <p>&copy; 2017 Okay Agency LLC &middot;</p>
-        </footer>
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script>
-    var _0xcd72=["\x63\x6C\x69\x63\x6B","\x73\x65\x72\x69\x61\x6C\x69\x7A\x65\x41\x72\x72\x61\x79","\x23\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2D\x66\x6F\x72\x6D","\x6C\x65\x6E\x67\x74\x68","\x6E\x61\x6D\x65","\x76\x61\x6C\x75\x65","\x70\x68\x6F\x6E\x65","","\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430\x20\u0443\u043A\u0430\u0436\u0438\u0442\u0435\x20\u0432\u0430\u0448\x20\u043D\u043E\u043C\u0435\u0440\x20\u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0430\x2E","\x2F\x63\x61\x6C\x6C\x5F\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E","\x65\x72\x72","\x73\x65\x6C\x65\x63\x74\x65\x64","\x72\x65\x6D\x6F\x76\x65\x41\x74\x74\x72","\x63\x68\x65\x63\x6B\x65\x64","\x76\x61\x6C","\x3A\x62\x75\x74\x74\x6F\x6E\x2C\x20\x3A\x73\x75\x62\x6D\x69\x74\x2C\x20\x3A\x72\x65\x73\x65\x74\x2C\x20\x3A\x68\x69\x64\x64\x65\x6E","\x6E\x6F\x74","\x3A\x69\x6E\x70\x75\x74","\u041E\u0436\u0438\u0434\u0430\u0439\u0442\u0435\x20\u0437\u0432\u043E\u043D\u043A\u0430\x20\u0432\x20\u0431\u043B\u0438\u0436\u0430\u0439\u0448\u0435\u0435\x20\u0432\u0440\u0435\u043C\u044F\x2E","\x65\x6D\x61\x69\x6C","\u0412\u0432\u0435\u0434\u0438\u0442\u0435\x20\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439\x20\u0430\u0434\u0440\u0435\u0441\x20\u044D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u043E\u0439\x20\u043F\u043E\u0447\u0442\u044B\x2E","\x70\x6F\x73\x74","\x6F\x6E","\x23\x73\x75\x62\x6D\x69\x74"];$(_0xcd72[23])[_0xcd72[22]](_0xcd72[0],function(){var _0x5c8ax1=$(_0xcd72[2])[_0xcd72[1]]();var _0x5c8ax2={};for(var _0x5c8ax3=0;_0x5c8ax3< _0x5c8ax1[_0xcd72[3]];++_0x5c8ax3){_0x5c8ax2[_0x5c8ax1[_0x5c8ax3][_0xcd72[4]]]= _0x5c8ax1[_0x5c8ax3][_0xcd72[5]]};if(_0x5c8ax2[_0xcd72[6]]== _0xcd72[7]){alert(_0xcd72[8])}else {$[_0xcd72[21]](_0xcd72[9],_0x5c8ax2,function(_0x5c8ax4){if(!_0x5c8ax4[_0xcd72[10]]){$(_0xcd72[17],_0xcd72[2])[_0xcd72[16]](_0xcd72[15])[_0xcd72[14]](_0xcd72[7])[_0xcd72[12]](_0xcd72[13])[_0xcd72[12]](_0xcd72[11]);alert(_0xcd72[18])}else {if(_0x5c8ax4[_0xcd72[10]]== _0xcd72[19]){alert(_0xcd72[20])}}})}});
-    </script>
-    <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter39997390 = new Ya.Metrika({ id:39997390, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/39997390" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-
-</body>
-
-</html>
+</div>

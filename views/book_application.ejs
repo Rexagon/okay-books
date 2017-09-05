@@ -1,0 +1,136 @@
+<div class="carousel slide" id="application-slider">
+    <div class="carousel-inner">
+        <div class="item active">
+            <img class="first-slide" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAADCAYAAABfwxXFAAAAYklEQVQYVwFXAKj/AZWJhf/78wMA39D0AAYlEQDrBOsAFwYRAAAXGgABoaCH/+7k+QDex/YA3/jqAPYJ9wBHOz8A9gAFAAHOzrn/3dbhANbB5QD9H/8AytXaABYQFAD0+QMAoMkncTB5GTgAAAAASUVORK5CYII=" alt="First slide">
+        </div>
+    </div>
+</div>
+<div class="container marketing">
+    <div class="row">
+        <div class="col-md-9">
+            <form role="form" class="form-horizontal" id="application-form">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Тип издания</label>
+                    <div class="col-sm-9">
+                        <select class="form-control" name="book_type">
+                            <option value="Книга (издание объёмом более 48 страниц и, как правило, с твёрдым переплётом)">Книга (издание объёмом более 48 страниц и, как правило, с твёрдым переплётом)</option>
+                            <option value="Брошюра (издание объемом свыше 4, но не более 48 страниц, обычно без твёрдого переплёта, в обложке)">Брошюра (издание объемом свыше 4, но не более 48 страниц, обычно без твёрдого переплёта, в обложке)</option>
+                            <option value="Каталог (информация о товарах или услугах фирмы с использованием красочных фотографий, детального описания продукта и цены)">Каталог (информация о товарах или услугах фирмы с использованием красочных фотографий, детального описания продукта и цены)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Объем издания</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" type="number" name="volume" min="1" max="100000" placeholder="предполагаемое количество страниц">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Желаемый формат издания</label>
+                    <div class="col-sm-9">
+                        <select class="form-control" name="book_format">
+                            <option value="А4">А4 (210 мм х 297 мм)</option>
+                            <option value="А5">А5 (148 мм х 210 мм)</option>
+                            <option value="А6">60х90/16 (145 мм х 215 мм)</option>
+                            <option value="Другой">Другой</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Фотоиллюстрации, рисунки, графики</label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" rows="3" name="illustrations" style="resize: none;" placeholder="предоставляются заказчиком или готовятся исполнителем"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Текстовые материалы</label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" rows="3" name="texts" style="resize: none;" placeholder="предоставляются заказчиком или готовятся исполнителем"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Тип обложки</label>
+                    <div class="col-sm-9">
+                        <select class="form-control" name="cover_type">
+                            <option value="Переплет">Переплет</option>
+                            <option value="Плотная обложка (~250 г/м2)">Плотная обложка (~250 г/м2)</option>
+                            <option value="Мягкая обложка (~200 г/м2)">Мягкая обложка (~200 г/м2)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Тип бумаги</label>
+                    <div class="col-sm-9">
+                        <select class="form-control" name="paper_type">
+                            <option value="90-200 гр/м2 (журнальный вариант)">90-200 гр/м2 (журнальный вариант)</option>
+                            <option value="250 гр/м2 (плотная бумага)">250 гр/м2 (плотная бумага)</option>
+                            <option value="Другая">Другая</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Красочность печати</label>
+                    <div class="col-sm-9">
+                        <select class="form-control" name="colors_type">
+                            <option value="Одноцветная">Одноцветная</option>
+                            <option value="Двухцветная">Двухцветная</option>
+                            <option value="Полноцветная">Полноцветная</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Тираж</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" type="number" name="editions_num" min="1" max="1000000000" placeholder="общее количество экземпляров">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Сроки производства</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" type="text" name="deadline" placeholder="желаемая дата получения тиража">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Дополнительные требования к изданию</label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" rows="3" name="description" style="resize: none;" placeholder="изготовление супер-обложки, кожаного переплёта, подарочной упаковки и др."></textarea>
+                    </div>
+                </div>
+                <div class="form-group has-warning">
+                    <label class="col-sm-3 control-label">Контактный E-mail
+                        <spam style="color:red">*</spam>
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                </div>
+                <div class="form-group has-warning">
+                    <label class="col-sm-3 control-label">Ф.И.О.
+                        <spam style="color:red">*</spam>
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                </div>
+                <div class="form-group has-warning">
+                    <label class="col-sm-3 control-label">Контактный телефон
+                        <spam style="color:red">*</spam>
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="tel" class="form-control" name="phone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+                        <button type="button" class="btn btn-primary" id="submit">Отправить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-3">
+            <p>Для того чтобы сотрудники издательства смогли дать ответ об условиях заказа, нам необходимо получить минимальные исходные данные об издании, указанные в этой типовой форме. Если Ваше издание обладает какими-либо характеристиками, не описанными в нашей типовой форме, Вы можете изложить их дополнительно.</p>
+            <hr>
+            <p>В случае отсутствия текстов и иллюстраций у заказчика, мы проводим все необходимые встречи, интервью, фотосессии, сбор архивных материалов. Разрабатываем дизайн и художественное оформление издания. Осуществляем весь комплекс редакционно-издательской подготовки.</p>
+        </div>
+    </div>
+</div>
